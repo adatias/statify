@@ -63,3 +63,16 @@
 .songBreak {
   height: 80px;
 }
+
+.saveToPlaylist {
+  padding: 5px;
+  border-radius: 99px;
+  background-color: white;
+  color: #1DB954;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: circular-bold;
+  font-size: 14px;
+}

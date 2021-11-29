@@ -52,9 +52,11 @@ function App() {
             <h1 className="navigationTitle">Statify</h1>
             <br />
 
-            <div className="navigationTab navigationLabel">
-              <HomeIcon className="navigationLabelIcon" />
-              <h4>Dashboard</h4>
+            <div className="navigationTab">
+              <div className="navigationLabel">
+                <HomeIcon className="navigationLabelIcon" />
+                <h4>Dashboard</h4>
+              </div>
             </div>
 
             <br />

@@ -24,12 +24,14 @@
   display: flex;
   align-items: center;
   height: 40px;
-  cursor: pointer;
   transition: 0.2s color ease-in;
 }
 
 .navigationLabel {
+  display: flex;
+  align-items: center;
   color: grey;
+  transition: 0.2s color ease-in;
 }
 
 .navigationLabelIcon {
@@ -61,4 +63,5 @@
 .navigationLink:hover,
 .navigationLabel:hover {
   color: white;
+  cursor: pointer;
 }

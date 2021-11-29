@@ -1,7 +1,5 @@
 import React from 'react'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { useDataLayerValue } from '../DataLayer/DataLayer';
 import Header from '../Header/Header'
 import SongInfo from '../SongInfo/SongInfo';
@@ -25,8 +23,7 @@ function TopSongs() {
       <div className="topSongsTable">
         <div className="topSongsIcons">
           <PlayCircleFilledIcon className="topSongsShuffle" />
-          <FavoriteIcon />
-          <MoreHorizIcon />
+          <div className="saveToPlaylist">Save to Playlist</div>
         </div>
 
         {topTracks?.items.map((item, index) => 
