@@ -1,0 +1,54 @@
+.songInfo {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.songInfo:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.songData {
+  margin-left: 20px;
+}
+
+.songData > h1 {
+  font-size: 16px;
+  font-family: circular-bold;
+}
+
+.songData > p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+  font-family: circular-book;
+}
+
+.songAlbum {
+  height: 40px;
+  width: 40px;
+}
+
+.songIndex {
+  font-family: circular-black;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.songInfo:hover > .songIndex {
+  display: none;
+}
+
+.songPlay {
+  display: none;
+}
+
+.songInfo:hover > .songPlay {
+  display: block;
+  margin-right: 10px;
+}

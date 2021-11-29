@@ -1,0 +1,64 @@
+.appBody {
+  display: flex;
+  height: 100vh;
+}
+
+.navigation {
+  flex: 0.2;
+  color: white;
+  background-color: black;
+  min-width: 230px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 30px;
+}
+
+.navigationTitle {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 36px;
+  font-family: circular-medium;
+}
+
+.navigationTab {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s color ease-in;
+}
+
+.navigationLabel {
+  color: grey;
+}
+
+.navigationLabelIcon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navigationDivider {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.navigation > hr {
+  border: 1px solid #282828;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.navigationLink {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: grey;
+  text-decoration: none;
+  transition: 0.2s color ease-in;
+}
+
+.navigationLink:hover,
+.navigationLabel:hover {
+  color: white;
+}

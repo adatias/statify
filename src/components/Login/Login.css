@@ -1,0 +1,64 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #242526;
+}
+
+.loginBubble {
+  height: 70vh;
+  width: 75vh;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border-color: #90EE90;
+  border-width: 10px;
+  border-style: solid;
+  color: black;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBubble > h1 {
+  font-family: circular-black;
+  font-size: 48px;
+}
+
+.loginBubble > h2 {
+  font-family: circular-medium;
+  font-size: 24px;
+}
+
+.loginBubble > p {
+  font-family: circular-light;
+  font-size: 18px;
+  width: 75%;
+}
+
+.loginButton {
+  padding: 20px;
+  border-radius: 99px;
+  background-color: #1DB954;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.loginButton > p {
+  font-weight: 800;
+  color: white;
+  font-family: circular-medium;
+}
+
+.loginButton > img {
+  margin-left: 10px;
+  width: 50%;
+}
+
+.loginButton:hover {
+  background-color: #1DCD56;
+}

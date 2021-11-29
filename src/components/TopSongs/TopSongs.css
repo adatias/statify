@@ -1,0 +1,65 @@
+.topSongs {
+  flex: 0.8;
+  padding: 30px;
+  background: linear-gradient(#1DB954, rgba(0, 0, 0, 1));
+  color: white;
+  overflow-y: overlay;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.topSongsHeader {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.topSongsDescription {
+  flex: 1;
+}
+
+.topSongsDescription > strong {
+  font-family: circular-black;
+}
+
+.topSongsDescription > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-family: circular-bold;
+}
+
+.topSongsDescription > p {
+  font-size: 14px;
+  font-family: circular-light;
+}
+
+.topSongsTable {
+  margin: 20px -30px;
+}
+
+.topSongsIcons {
+  display: flex;
+  align-items: center;
+}
+
+.topSongsIcons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.topSongsShuffle {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.topSongsShuffle:hover {
+  transition: 0.1s transform ease-in;
+  transform: scale(1.08);
+}
+
+.songBreak {
+  height: 80px;
+}

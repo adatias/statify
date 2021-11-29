@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.headerLeft {
+  flex: 0.5;
+}
+
+.headerLeft > input {
+  border: none;
+  width: 100%;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerRight > h4 {
+  margin-left: 10px;
+}
