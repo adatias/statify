@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import reducer, { initialState } from './reducer'
 import TopSongs from './components/TopSongs/TopSongs';
+import TopArtists from './components/TopArtists/TopArtists';
 import { DataLayer } from './components/DataLayer/DataLayer'
 import './index.css';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
           <Route path="/" element={<App />}>
             <Route index element={<TopSongs />} />
             <Route path="top-songs" element={<TopSongs />} />
+            <Route path="top-artists" element={<TopArtists />} />
           </Route>
         </Routes>
       </BrowserRouter>

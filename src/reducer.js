@@ -24,7 +24,13 @@ const reducer = (state, action) => {
         ...state,
         topTracks: action.topTracks
       }
-  
+
+    case 'SET_TOP_ARTISTS_ALL_TIME':
+      return {
+        ...state,
+        topArtists: action.topArtists
+      }
+
     default:
       return state;
   }

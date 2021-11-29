@@ -1,0 +1,44 @@
+.topArtists {
+  flex: 0.8;
+  padding: 30px;
+  background: linear-gradient(#A4FFEE, rgba(0, 0, 0, 1));
+  color: white;
+  overflow-y: overlay;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.topArtistsHeader {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.topArtistsDescription {
+  flex: 1;
+}
+
+.topArtistsDescription > strong {
+  font-family: circular-black;
+}
+
+.topArtistsDescription > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-family: circular-bold;
+}
+
+.topArtistsDescription > p {
+  font-size: 14px;
+  font-family: circular-light;
+}
+
+.topArtistsTable {
+  margin: 20px -30px;
+}
+
+.artistBreak {
+  height: 80px;
+}
