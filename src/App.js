@@ -4,7 +4,7 @@ import { Outlet, Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import { getTokenFromUrl } from './spotify';
 import { useDataLayerValue } from './components/DataLayer/DataLayer';
-import Login from './components/Login/Login'
+import Login from './components/Login/Login';
 import './App.css';
 
 const spotifyApi = new SpotifyWebApi();
@@ -39,6 +39,18 @@ function App() {
             type: 'SET_TOP_TRACKS_ALL_TIME',
             topTracks: list
           })
+
+          console.log(list);
+        })
+
+      spotifyApi.getMyTopArtists({ 'limit': 50, 'time_range': 'long_term' })
+        .then(list => {
+          dispatch({
+            type: 'SET_TOP_ARTISTS_ALL_TIME',
+            topArtists: list
+          })
+
+          console.log(list);
         })
     }
   });
@@ -68,7 +80,7 @@ function App() {
             </div>
 
             <div className="navigationTab">
-              <p className="navigationLink">Your Top Artists</p>
+            <Link className="navigationLink" to="/top-artists">Your Top Artists</Link>
             </div>
           </div>
         }

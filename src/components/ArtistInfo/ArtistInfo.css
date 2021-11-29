@@ -1,0 +1,35 @@
+.artistInfo {
+  margin-left: 20px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.artistInfo:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.artistData {
+  margin-left: 20px;
+}
+
+.artistData > h1 {
+  font-size: 30px;
+  font-family: circular-bold;
+}
+
+.artistImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 99px;
+}
+
+.artistIndex {
+  font-family: circular-black;
+  font-size: 24px;
+  margin-right: 10px;
+}
