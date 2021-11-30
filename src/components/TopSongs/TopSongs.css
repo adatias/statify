@@ -64,7 +64,8 @@
   height: 80px;
 }
 
-.saveToPlaylist {
+.saveToPlaylist,
+.savedToPlaylist {
   padding: 5px;
   border-radius: 99px;
   background-color: white;
@@ -75,4 +76,10 @@
   align-items: center;
   font-family: circular-bold;
   font-size: 14px;
+}
+
+.saveToPlaylist:hover {
+  transition: 0.1s transform ease-in;
+  transform: scale(1.08);
+  cursor: pointer;
 }
