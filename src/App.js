@@ -58,34 +58,32 @@ function App() {
   return (
     <div className="App">
       {!token && <Login />}
-      <div className="appBody">
-        {token &&
-          <div className="navigation">
-            <h1 className="navigationTitle">Statify</h1>
-            <br />
+      {token && <div className="appBody">
+        <div className="navigation">
+          <h1 className="navigationTitle">Statify</h1>
+          <br />
 
-            <div className="navigationTab">
-              <div className="navigationLabel">
-                <HomeIcon className="navigationLabelIcon" />
-                <Link className="navigationSubheader" to="/">Dashboard</Link>
-              </div>
-            </div>
-
-            <br />
-            <strong className="navigationDivider">YOUR STATISTICS</strong>
-            <hr />
-
-            <div className="navigationTab">
-              <Link className="navigationLink" to="/top-songs">Your Top Songs</Link>
-            </div>
-
-            <div className="navigationTab">
-            <Link className="navigationLink" to="/top-artists">Your Top Artists</Link>
+          <div className="navigationTab">
+            <div className="navigationLabel">
+              <HomeIcon className="navigationLabelIcon" />
+              <Link className="navigationSubheader" to="/">Dashboard</Link>
             </div>
           </div>
-        }
-        {token && <Outlet />}
-      </div>
+
+          <br />
+          <strong className="navigationDivider">YOUR STATISTICS</strong>
+          <hr />
+
+          <div className="navigationTab">
+            <Link className="navigationLink" to="/top-songs">Your Top Songs</Link>
+          </div>
+
+          <div className="navigationTab">
+            <Link className="navigationLink" to="/top-artists">Your Top Artists</Link>
+          </div>
+        </div>
+        <Outlet />
+      </div>}
     </div>
   );
 }

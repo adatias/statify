@@ -7,7 +7,7 @@ import './Dashboard.css'
 const spotifyApi = new SpotifyWebApi();
 
 function Dashboard() {
-  const [{ user, topTrack }, dispatch] = useDataLayerValue();
+  const [{ user }, dispatch] = useDataLayerValue();
   useEffect(() => {
     spotifyApi.getMe()
       .then(user => {

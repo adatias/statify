@@ -31,12 +31,6 @@ const reducer = (state, action) => {
         topArtists: action.topArtists
       }
 
-    case 'SET_TOP_TRACK_ALL_TIME':
-      return {
-        ...state,
-        topTrack: action.topTrack
-      }
-
     default:
       return state;
   }
