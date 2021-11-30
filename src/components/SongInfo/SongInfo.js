@@ -3,8 +3,12 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import './SongInfo.css';
 
 function SongInfo({ track, index }) {
+  function goToSpotifySong() {
+    window.open(track.external_urls.spotify)
+  }
+
   return (
-    <div className="songInfo">
+    <div className="songInfo" onClick={goToSpotifySong}>
       <div className="songPlay">
         <PlayArrowIcon />
       </div>
