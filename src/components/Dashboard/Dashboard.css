@@ -1,0 +1,40 @@
+.dashboard {
+  flex: 0.8;
+  padding: 30px;
+  background: linear-gradient(#C1367E, rgba(0, 0, 0, 1));
+  color: white;
+  overflow-y: overlay;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboardHeader {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.dashboardDescription {
+  flex: 1;
+}
+
+.dashboardDescription > h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-family: circular-black;
+}
+
+.dashboardDescription > p {
+  font-size: 24px;
+  font-family: circular-light;
+}
+
+.dashboardStats {
+  margin: 20px -30px;
+}
+
+.artistBreak {
+  height: 80px;
+}

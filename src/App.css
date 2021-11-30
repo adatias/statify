@@ -58,10 +58,20 @@
   color: grey;
   text-decoration: none;
   transition: 0.2s color ease-in;
+  font-family: circular-light;
 }
 
 .navigationLink:hover,
-.navigationLabel:hover {
+.navigationLabel:hover,
+.navigationLabel:hover > .navigationSubheader {
   color: white;
   cursor: pointer;
+}
+
+.navigationSubheader {
+  font-size: 18px;
+  color: grey;
+  text-decoration: none;
+  transition: 0.2s color ease-in;
+  font-family: circular-bold;
 }

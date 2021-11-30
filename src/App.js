@@ -67,7 +67,7 @@ function App() {
             <div className="navigationTab">
               <div className="navigationLabel">
                 <HomeIcon className="navigationLabelIcon" />
-                <h4>Dashboard</h4>
+                <Link className="navigationSubheader" to="/">Dashboard</Link>
               </div>
             </div>
 
