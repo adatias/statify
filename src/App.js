@@ -39,8 +39,6 @@ function App() {
             type: 'SET_TOP_TRACKS_ALL_TIME',
             topTracks: list
           })
-
-          console.log(list);
         })
 
       spotifyApi.getMyTopArtists({ 'limit': 50, 'time_range': 'long_term' })
@@ -49,11 +47,9 @@ function App() {
             type: 'SET_TOP_ARTISTS_ALL_TIME',
             topArtists: list
           })
-
-          console.log(list);
         })
     }
-  });
+  }, []);
 
   return (
     <div className="App">
