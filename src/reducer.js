@@ -31,6 +31,18 @@ const reducer = (state, action) => {
         topArtists: action.topArtists
       }
 
+    case 'SET_TOP_TRACKS_RECENT':
+      return {
+        ...state,
+        recentTopTracks: action.recentTopTracks
+      }
+
+    case 'SET_TOP_ARTISTS_RECENT':
+      return {
+        ...state,
+        recentTopArtists: action.recentTopArtists
+      }
+
     default:
       return state;
   }

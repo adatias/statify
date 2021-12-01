@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import reducer, { initialState } from './reducer'
 import TopSongs from './components/TopSongs/TopSongs';
 import TopArtists from './components/TopArtists/TopArtists';
+import Dashboard from './components/Dashboard/Dashboard';
 import { DataLayer } from './components/DataLayer/DataLayer'
 import './index.css';
 
@@ -16,7 +17,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>
-            <Route index element={<TopSongs />} />
+            <Route index element={<Dashboard />} />
             <Route path="top-songs" element={<TopSongs />} />
             <Route path="top-artists" element={<TopArtists />} />
           </Route>
