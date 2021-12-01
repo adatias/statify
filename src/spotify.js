@@ -1,6 +1,6 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientId = "e118b782fa6c4150a801918872c77bca";
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://statify-adatias.web.app/";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",
