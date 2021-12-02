@@ -9,7 +9,7 @@ function ArtistInfo({ artist, index }) {
   return (
     <div className="artistInfo" onClick={goToSpotifyProfile}>
       <div className="artistIndex">{index + 1}.</div>
-      <img className="artistImage" src={artist.images[0].url} alt="" />
+      <img className="artistImage" src={artist?.images[0].url} alt="" />
       <div className="artistData">
         <h1>{artist.name}</h1>
       </div>
